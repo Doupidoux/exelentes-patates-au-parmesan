@@ -91,20 +91,29 @@
 <body>
 
     <div class="container">
-        <h1>Ecoutez une recette de patate au parmesan</h1>
+        <h1>Ecoutez des recettes de cuisine</h1>
 
         <ul class="book-list">
-            <!-- Livre avec votre voix -->
+            <!-- Première recette -->
             <li class="book-item">
                 <div>
                     <h2>Recette de patates au parmesan</h2>
-                    <!-- Remplacez "votre-voix.mp3" par le lien vers votre fichier audio -->
-                    <audio controls>
+                    <audio id="audio1" controls>
                         <source src="caca.mp3" type="audio/mp3">
                         Votre navigateur ne prend pas en charge l'élément audio.
                     </audio>
                 </div>
-                <button onclick="playAudio('audio1')">Lire</button>
+            </li>
+
+            <!-- Deuxième recette -->
+            <li class="book-item">
+                <div>
+                    <h2>recette de patate au patates</h2>
+                    <audio id="audio2" controls>
+                        <source src="popo.mp3" type="audio/mp3">
+                        Votre navigateur ne prend pas en charge l'élément audio.
+                    </audio>
+                </div>
             </li>
         </ul>
 
@@ -114,14 +123,6 @@
         </div>
     </div>
 
-    <script>
-        // Fonction pour jouer un livre audio
-        function playAudio(audioId) {
-            // Récupérer l'élément audio correspondant
-            const audio = document.querySelector(`#${audioId}`);
-            audio.play();
-        }
-    </script>
-
 </body>
 </html>
+
